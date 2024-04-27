@@ -1,28 +1,95 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Prosta Strona</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Monitoring System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #565858;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #BBBCBC;
+            color: #ffffff;
+            padding: 10px;
+            text-align: right;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #888A8A;
+            padding: 20px;
+            width: 20%;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .camera {
+            width: 400px; /* Ustawia szerokość kamery na połowę szerokości kontenera minus odstęp */
+            aspect-ratio: 1/1; /* Zachowuje proporcje kwadratowe */
+            border: 1px solid #b01b1b;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .camera:nth-child(odd) {
+            margin-right: 20px; /* Dodaje odstęp między parą kamer */
+        }
+
+        .camera:nth-last-child(2) {
+            margin-right: 0; /* Usuwa odstęp po ostatniej parze kamer */
+        }
+    </style>
 </head>
 <body>
-
-<header>
-    <h1>Witaj na mojej stronie!</h1>
-</header>
-
-<section>
-    <div class="container">
-        <h2>O mnie</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales, ligula in aliquam vestibulum, est purus faucibus sapien, nec ultrices lorem felis eget risus. Quisque venenatis convallis erat sit amet placerat. Fusce rhoncus convallis nulla, at dictum risus facilisis sed. Integer auctor, libero sed posuere feugiat, ipsum lectus dapibus nulla, nec volutpat nisi lorem id purus. Nam nec consectetur libero.</p>
-        <img src="https://via.placeholder.com/400" alt="Zdjęcie">
+    <div class="header">
+        Zalogowany użytkownik: John Doe
     </div>
-</section>
-
-<footer>
-    <p>© 2024 Moja Prosta Strona</p>
-</footer>
-
+    <div class="container">
+        <div class="sidebar">
+            <h2>Wybór kamer</h2>
+            <ul>
+                <li>Kamera 1</li>
+                <li>Kamera 2</li>
+                <li>Kamera 3</li>
+                <li>Kamera 4</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div>
+                <div class="camera">
+                    <h2>Kamera 1</h2>
+                    <!-- Miejsce na pierwszą kamerę -->
+                </div>
+                <div class="camera">
+                    <h2>Kamera 2</h2>
+                    <!-- Miejsce na drugą kamerę -->
+                </div>
+            </div>
+            <div>
+                <div class="camera">
+                    <h2>Kamera 3</h2>
+                    <!-- Miejsce na trzecią kamerę -->
+                </div>
+                <div class="camera">
+                    <h2>Kamera 4</h2>
+                    <!-- Miejsce na czwartą kamerę -->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

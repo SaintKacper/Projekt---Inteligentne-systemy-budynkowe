@@ -43,12 +43,30 @@
         input[type="submit"]:hover {
             background-color: #0056b3;
         }
+
+        .branding {
+            background-color: #808080;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .branding img {
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
+        <div class="branding">
+            <span>WatchGuardPro</span>
+            <img src="placeholder_logo.png" alt="Logo">
+        </div>
         <h2>Logowanie</h2>
-        <form action="login.php" method="post">
+        <form action="Strona główna.html" method="post">
             <input type="text" name="username" placeholder="Nazwa użytkownika" required>
             <input type="password" name="password" placeholder="Hasło" required>
             <input type="submit" value="Zaloguj">

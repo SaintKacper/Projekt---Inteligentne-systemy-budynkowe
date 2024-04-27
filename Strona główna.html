@@ -7,14 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #565858;
+            background-color: #636464;
             margin: 0;
             padding: 0;
         }
 
         .header {
-            background-color: #BBBCBC;
-            color: #ffffff;
+            background-color: #888A8A;
+            color: #fff;
             padding: 10px;
             text-align: right;
         }
@@ -24,7 +24,7 @@
         }
 
         .sidebar {
-            background-color: #888A8A;
+            background-color: #f4f4f4;
             padding: 20px;
             width: 20%;
         }
@@ -38,11 +38,13 @@
         }
 
         .camera {
-            width: 400px; /* Ustawia szerokość kamery na połowę szerokości kontenera minus odstęp */
+            width: 600px; /* Ustawia szerokość kamery na połowę szerokości kontenera minus odstęp */
             aspect-ratio: 1/1; /* Zachowuje proporcje kwadratowe */
-            border: 1px solid #b01b1b;
+            border: 1px solid #ccc;
             padding: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 40vw; /* Maksymalna szerokość kamery wynosi 40% szerokości widoku przeglądarki */
+            max-height: 40vh; /* Maksymalna wysokość kamery wynosi 40% wysokości widoku przeglądarki */
         }
 
         .camera:nth-child(odd) {
@@ -66,6 +68,7 @@
                 <li>Kamera 2</li>
                 <li>Kamera 3</li>
                 <li>Kamera 4</li>
+                <li>Dodaj kamerę</li>
             </ul>
         </div>
         <div class="main-content">
@@ -87,6 +90,16 @@
                 <div class="camera">
                     <h2>Kamera 4</h2>
                     <!-- Miejsce na czwartą kamerę -->
+                </div>
+            </div>
+            <div>
+                <div class="camera">
+                    <h2>Kamera 5</h2>
+                    <!-- Miejsce na piątą kamerę -->
+                </div>
+                <div class="camera">
+                    <h2>Kamera 6</h2>
+                    <!-- Miejsce na szóstą kamerę -->
                 </div>
             </div>
         </div>
